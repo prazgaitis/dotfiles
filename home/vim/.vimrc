@@ -80,13 +80,13 @@ let g:loaded_zip = 1
 let g:loaded_zipPlugin = 1
 
 " syntax highlighting
+"
+colorscheme Tomorrow-Night
+au FileType diff colorscheme desert
+au FileType git colorscheme desert
+au BufWinLeave * colorscheme Tomorrow-Night
 
-set background=dark
-try
-  colorscheme iceberg
-catch
-  colorscheme peachpuff
-endtry
+
 syntax enable
 set synmaxcol=200
 
@@ -236,7 +236,7 @@ nnoremap <silent> <LEFT> :tabprevious<CR>
 nnoremap <silent> <RIGHT> :tabnext<CR>
 
 nmap <Leader><Leader> :noh<CR>:w<CR>
-map <silent> <Leader>cc :TComment<CR>
+map <silent> <LocalLeader>cc :TComment<CR>
 nnoremap <Leader>k :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 nnoremap <Leader>p :CtrlPBuffer<CR>
@@ -325,6 +325,10 @@ let NERDTreeShowHidden = 1
 let NERDTreeMinimalUI = 0
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeBookmarksFile = expand("$XDG_CACHE_HOME/NERDTreeBookmarks")
+
+map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
+map <silent> <LocalLeader>nr :NERDTree<CR>
+map <silent> <LocalLeader>nf :NERDTreeFind<CR>
 
 " bufexplorer
 

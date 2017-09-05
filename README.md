@@ -1,9 +1,9 @@
-my squiggle ~
+Under the hood of my terminal
 =============
 
 these are my dotfiles
 
-i haven't really organized them for other people, but if you have questions, feel free to email me at <me@evanhahn.com>
+forked from [Evan Hahn's dotfiles](https://github.com/EvanHahn/dotfiles)
 
 installation
 ------------
