@@ -111,8 +111,8 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# scroll correctly
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# scroll naturally (true = natural, false = inverted)
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # no Launchpad gesture
 defaults write com.apple.dock 'showLaunchpadGestureEnabled' -bool false
