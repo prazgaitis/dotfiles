@@ -45,6 +45,12 @@ if exists(':Plug')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-sensible'
+  " Plug 'pangloss/vim-javascript'
+  " Plug 'mxw/vim-jsx'
+  " Plug 'chemzqm/vim-jsx-improve'
+
+  Plug 'pangloss/vim-javascript'
+  Plug 'maxmellon/vim-jsx-pretty'
 
   if has('nvim')
     let s:can_install_ale = has('timers')

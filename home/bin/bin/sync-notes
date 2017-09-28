@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+set -u
+set -o pipefail
+
+cd ~/google-drive/personal/notes/
+git commit -am "updating notes"
+git push -u
+
