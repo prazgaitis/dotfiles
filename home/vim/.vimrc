@@ -45,10 +45,7 @@ if exists(':Plug')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-sensible'
-  " Plug 'pangloss/vim-javascript'
-  " Plug 'mxw/vim-jsx'
-  " Plug 'chemzqm/vim-jsx-improve'
-
+  Plug 'tpope/vim-surround'
   Plug 'pangloss/vim-javascript'
   Plug 'maxmellon/vim-jsx-pretty'
 
@@ -243,6 +240,7 @@ nnoremap <silent> <RIGHT> :tabnext<CR>
 
 nmap <Leader><Leader> :noh<CR>:w<CR>
 map <silent> <LocalLeader>cc :TComment<CR>
+map <silent> <Leader>ff :CtrlPBuffer<CR>
 nnoremap <Leader>k :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
 nnoremap <Leader>p :CtrlPBuffer<CR>
