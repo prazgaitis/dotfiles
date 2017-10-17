@@ -40,6 +40,7 @@ alias npmt='npm t'
 alias sl='ls'
 alias sudp='sudo'
 alias snippet='snippets'
+alias ls='ls -lah'
 
 tempe () {
   cd "$(mktemp -d)"
